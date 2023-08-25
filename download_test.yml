@@ -1,1 +1,8 @@
 ---
+- name: download ansible awx from git for test
+  host: all
+  task:
+    - name: git clone ansible awx
+    ansible.builtin.git:
+      repo: https://github.com/ansible/awx.git
+      dest: ~/git_download_test
