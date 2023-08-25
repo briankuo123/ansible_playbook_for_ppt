@@ -6,3 +6,6 @@
     ansible.builtin.git:
       repo: https://github.com/ansible/awx.git
       dest: ~/git_download_test
+    - name: show message for finish
+    ansible.builtin.debug:
+      msg: git clone is doen
