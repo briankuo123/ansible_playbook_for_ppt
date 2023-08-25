@@ -8,4 +8,4 @@
       dest: ~/git_download_test
     - name: show message for finish
     ansible.builtin.debug:
-      msg: git clone is doen
+      msg: git clone is done
