@@ -1,7 +1,7 @@
 - name: create dir for test
   hosts: all
   tasks:
-    - name: create dir
+    - name: Creates directory
       file:
-        path: ~/ansible_test_create_dir
-        status: directory
+        path: ~/dir_create_by_playbook
+        state: directory
