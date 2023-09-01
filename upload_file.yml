@@ -3,7 +3,7 @@
 
   tasks:
     - name: upload file to remote host
-      # ansible.builtin.copy:
-      template:
+      ansible.builtin.copy:
+      # template:
         src: "{{ src_path }}"
         dest: "{{ dest_path }}"
