@@ -1,0 +1,8 @@
+- name: upload files to remote host
+  hosts: all
+
+  tasks:
+    - name: upload file to remote host
+      ansible.builtin.copy: 
+        src: "{{ src_path }}"
+        dest: "{{ dest_path }}"
