@@ -1,7 +1,7 @@
-- name: create dir for test
+- name: create directory for test
   hosts: all
   tasks:
     - name: Creates directory
       file:
-        path: ~/dir_create_by_playbook
+        path: ~/directory_create_by_playbook
         state: directory
