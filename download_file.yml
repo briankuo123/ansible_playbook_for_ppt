@@ -6,3 +6,4 @@
       ansible.builtin.fetch:
         src: "{{ src_path }}"
         dest: "{{ dest_path }}"
+        flat: yes
