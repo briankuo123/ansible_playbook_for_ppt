@@ -6,4 +6,3 @@
       ansible.builtin.copy: 
         src: "{{ src_path }}"
         dest: "{{ dest_path }}"
-        remote_src: true
