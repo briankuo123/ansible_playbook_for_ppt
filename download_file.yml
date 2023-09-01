@@ -3,6 +3,6 @@
 
   tasks:
     - name: download file to localhost
-        ansible.builtin.copy:
-          src: "{{ src_path }}"
-          dest: "{{ dest_path }}"
+      ansible.builtin.copy:
+        src: "{{ src_path }}"
+        dest: "{{ dest_path }}"
