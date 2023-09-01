@@ -1,6 +1,0 @@
-- name: Hello2 for hello
-  hosts: all
-  tasks:
-    - name: Hello Message
-      ansible.builtin.debug:
-        msg: "hello2 say hello"
