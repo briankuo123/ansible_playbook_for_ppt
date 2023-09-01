@@ -7,4 +7,3 @@
       # template:
         src: "{{ src_path }}"
         dest: "{{ dest_path }}"
-        flat: yes
