@@ -1,5 +1,6 @@
 - name: read file
   hosts: all
+  connection: local
 
   tasks:
     - name: read file in assign path
