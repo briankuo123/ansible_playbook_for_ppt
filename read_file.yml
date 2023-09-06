@@ -1,5 +1,5 @@
 - name: read file
-  host: all
+  hosts: all
 
   tasks:
     - name: read file in assign path
