@@ -1,0 +1,43 @@
+- name: download file to localhost
+  hosts: all
+  
+  # vars_prompt:
+
+  #   - name: src_path
+  #     prompt: What is your source path?
+  #     private: false
+
+  #   - name: dest_path
+  #     prompt: What is your destination path?
+  #     private: false
+  # vars:
+  #   file_lookup: "{{ lookup('file', '{{ dest_path }}') }}"
+
+  tasks:
+    - name: download file to localhost
+      ansible.builtin.fetch:
+        src: "{{ src_path }}"
+        dest: "{{ dest_path }}"
+        flat: true
+
+    - name: read file that just download
+      ansible.builtin.debug:
+        msg: "{{lookup('ansible.builtin.file', '/testfolder/target_file')}}"
+
+  
+
+    # - name: get machine name
+    #   shell: hostname
+    #   register: hostname_output
+
+    # - debug: var=hostname_output.stdout
+    # - debug: "{{ file_lookup }}"
+
+- name: 
+  hosts: test
+
+  tasks: 
+    - name: move the file that just downloaded to assign place
+      ansible.builtin.copy:
+        src: "{{ get_path }}"
+        dest: "{{ save_path }}"
