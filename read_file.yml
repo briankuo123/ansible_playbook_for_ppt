@@ -1,0 +1,7 @@
+- name: read file
+  host: all
+
+  tasks:
+    - name: read file in assign path
+      ansible.builtin.debug:
+        msg: "{{ lookup('ansible.builtin.file', '{{ read_path }}') }}"
